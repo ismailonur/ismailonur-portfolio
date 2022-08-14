@@ -9,9 +9,11 @@ const Header = () => {
   return (
     <header>
       <div className='container header__container'>
-        <h5>Hello I'm</h5>
+        <h4>Hello I'm</h4>
         <h1>İsmail Onur</h1>
-        <h5>Software Engineer</h5>
+        <h4>Software Engineer</h4>
+        <h5>Mobile (React-Native) Developer</h5>
+        <h5>React.js Developer</h5>
 
         <CTA />
         <HeaderSocials />
@@ -20,10 +22,10 @@ const Header = () => {
           <img src={ME} alt='me' />
         </div>
 
-        <a href="#contacts" className='scroll__down'>Scroll Down</a>
+        <a href="#contact" className='scroll__down'>Scroll Down</a>
       </div>
     </header>
   )
 }
 
-export {Header}
+export { Header }
