@@ -5,6 +5,7 @@ import {
     About,
     Experience,
     Services,
+    Blog,
     Portfolio,
     Testimonials,
     Contact,
@@ -18,7 +19,8 @@ const Main = () => {
             <Nav />
             <About />
             <Experience />
-            <Services />
+            {/* <Services /> */}
+            <Blog />
             <Portfolio />
             <Testimonials />
             <Contact />

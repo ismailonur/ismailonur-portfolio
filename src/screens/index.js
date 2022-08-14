@@ -6,6 +6,7 @@ export { Header } from './header/Header.jsx';
 export { Nav } from './nav/Nav.jsx';
 export { Portfolio } from './portfolio/Portfolio.jsx';
 export { Services } from './services/Services.jsx';
+export { Blog } from './blog/Blog.jsx';
 export { Testimonials } from './testimonials/Testimonials.jsx';
 
 export { Policy } from './policy/Policy.jsx';
