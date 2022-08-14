@@ -1,10 +1,17 @@
 import React from 'react'
 import './footer.css'
 
-import { FiInstagram } from 'react-icons/fi'
-import { IoLogoTwitter } from 'react-icons/io'
+import { FaGithub } from 'react-icons/fa'
+import { BsLinkedin } from 'react-icons/bs'
+import { useEffect } from 'react'
 
 const Footer = () => {
+  const [yearNow , setYearNow] = React.useState(2022)
+
+  useEffect(() => {
+    setYearNow(new Date().getFullYear())
+  }, [])
+
   return (
     <footer>
       <a href='#' className='footer__logo'>İsmail Onur</a>
@@ -19,8 +26,11 @@ const Footer = () => {
         <li>
           <a href='#experience'>Experience</a>
         </li>
-        <li>
+        {/* <li>
           <a href='#services'>Services</a>
+        </li> */}
+        <li>
+          <a href='#blog'>Blog</a>
         </li>
         <li>
           <a href='#portfolio'>Portfolio</a>
@@ -34,13 +44,13 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href='https://instagram.com'><FiInstagram /></a>
-        <a href='https://twitter.com'><IoLogoTwitter /></a>
+        <a href='https://github.com/ismailonur' target='_blank'><FaGithub /></a>
+        <a href='https://www.linkedin.com/in/ismailonur15/' target='_blank'><BsLinkedin /></a>
       </div>
 
       <div className="footer__copyright">
         <small>
-          &copy; Copyright 2022. All rights reserved.
+          &copy; Copyright {yearNow}. All rights reserved.
         </small>
       </div>
     </footer>
