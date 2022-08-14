@@ -1,28 +1,18 @@
 import React from 'react'
-import { 
-    Header, 
-    Nav, 
-    About, 
-    Experience, 
-    Services, 
-    Portfolio, 
-    Testimonials,
-    Contact,
-    Footer
-} from './components'
+import { Routes, Route } from "react-router-dom";
+
+import {
+    Main,
+    Policy
+} from './screens'
 
 const App = () => {
     return (
         <>
-            <Header />
-            <Nav />
-            <About />
-            <Experience />
-            <Services />
-            <Portfolio />
-            <Testimonials />
-            <Contact />
-            <Footer />
+            <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="pol" element={<Policy />} />
+            </Routes>
         </>
     )
 }
