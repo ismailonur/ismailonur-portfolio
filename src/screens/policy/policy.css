@@ -5,13 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15%;
+    padding: 5%;
 }
 
 .policy_container>h1{
     font-size: 2.5rem;
     font-weight: bold;
-    color: #fff;
+    color: #4db5ff;
     text-align: center;
     margin-bottom: 1rem;
 }
