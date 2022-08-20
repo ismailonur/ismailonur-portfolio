@@ -10,6 +10,9 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .blog__item:hover {
@@ -20,16 +23,6 @@
 .blog__item-img {
     border-radius: 1.5rem;
     overflow: hidden;
-    height: 210px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.blog__item-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 1.5rem;
 }
 
 .blog__item h3 {
