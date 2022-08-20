@@ -7,10 +7,11 @@ import {
 } from './screens'
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-150454474-2";
+const TRACKING_ID = "UA-150454474-1";
 ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
+    console.log('====================', TRACKING_ID)
     return (
         <>
             <Routes>
