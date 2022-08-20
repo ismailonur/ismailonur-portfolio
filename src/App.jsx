@@ -6,6 +6,10 @@ import {
     Policy
 } from './screens'
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-72WNMQ659H";
+ReactGA.initialize(TRACKING_ID);
+
 const App = () => {
     return (
         <>
