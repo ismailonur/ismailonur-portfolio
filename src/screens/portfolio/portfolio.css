@@ -10,6 +10,9 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .portfolio__item:hover {
@@ -22,8 +25,9 @@
     overflow: hidden;
 }
 
-.portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+.portfolio__item h2 {
+    color: var(--color-primary);
+    margin: 1.2rem 0 1rem;
 }
 
 .portfolio__item-cta {

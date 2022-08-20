@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 
-import IMG1 from '../../assets/portfolio1.jpg'
+import IMG1 from '../../assets/eth_bg_logo.png'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
@@ -11,44 +11,40 @@ import IMG6 from '../../assets/portfolio6.jpg'
 const data = [
   {
     id: 1,
-    title: 'Portfolio 1',
+    title: 'Ethereum Gas Tracker & Notifications',
     image: IMG1,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    link: 'https://www.google.com'
+    description: 'As a result of the calculations, transaction fees on the ETHEREUM network are calculated. The value that matters here is the GWEI. It is cheaper to trade when the GWEI value is low. Thanks to this application, you can track the GWEI value, create notifications whenever you want, and make cheap transactions on the ETHEREUM network.',
+    link1: 'https://www.github.com/ismailonur',
+    link2: 'https://play.google.com/store/apps/details?id=com.ethereumgastracker'
   },
   {
     id: 2,
     title: 'Portfolio 2',
     image: IMG2,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     link: 'https://www.google.com'
   },
   {
     id: 3,
     title: 'Portfolio 3',
     image: IMG3,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     link: 'https://www.google.com'
   },
   {
     id: 4,
     title: 'Portfolio 4',
     image: IMG4,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     link: 'https://www.google.com'
   },
   {
     id: 5,
     title: 'Portfolio 5',
     image: IMG5,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     link: 'https://www.google.com'
   },
   {
     id: 6,
     title: 'Portfolio 6',
     image: IMG6,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     link: 'https://www.google.com'
   }
 ]
@@ -61,16 +57,20 @@ const Portfolio = () => {
 
       <div className='container portfolio__container'>
         {
-          data.map(({ id, image, title, link }, index) => {
+          data.map(({ id, image, title, description = '', link1, link2 = 'https://www.google.com' }, index) => {
             return (
               <article className='portfolio__item' key={id}>
                 <div className='portfolio__item-img'>
                   <img src={image} alt='' />
                 </div>
-                <h3>{title}</h3>
-                <div className='portfolio__item-cta'>
-                  <a href={link} className='btn' target='_blank'>GitHub</a>
-                  <a href={link} className='btn btn-primary' target='_blank'>Demo</a>
+                <div>
+                  <h2>{title}</h2>
+                  <h5>{description}</h5>
+                  <br />
+                  <div className='portfolio__item-cta'>
+                    <a href={link1} className='btn' target='_blank'>GitHub</a>
+                    <a href={link2} className='btn btn-primary' target='_blank'>Play Store</a>
+                  </div>
                 </div>
               </article>
             )
