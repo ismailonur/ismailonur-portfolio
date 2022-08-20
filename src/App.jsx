@@ -7,7 +7,7 @@ import {
 } from './screens'
 
 import ReactGA from 'react-ga';
-const TRACKING_ID = "G-72WNMQ659H";
+const TRACKING_ID = "UA-150454474-2";
 ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
