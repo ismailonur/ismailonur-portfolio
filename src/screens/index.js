@@ -9,6 +9,6 @@ export { Services } from './services/Services.jsx';
 export { Blog } from './blog/Blog.jsx';
 export { Testimonials } from './testimonials/Testimonials.jsx';
 
-export { Policy } from './policy/Policy.jsx';
+export { Policy } from './policys/Policy.jsx';
 
 export { Main } from './main/Main.jsx';

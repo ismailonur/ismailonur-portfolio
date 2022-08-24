@@ -19,7 +19,8 @@ const App = () => {
         <>
             <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="ethereum_gwei_tracker_privacy_policy" element={<Policy />} />
+                <Route path="ethereum_gwei_tracker_privacy_policy" element={<Policy title={"ethereum"} />} />
+                <Route path="biometric_password_protection_privacy_policy" element={<Policy title={"biometric"}/>} />
             </Routes>
         </>
     )
