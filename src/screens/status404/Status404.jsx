@@ -20,18 +20,6 @@ const Status404 = () => {
                 </g>
             </svg>
 
-            <svg>
-                <defs>
-                    <filter id="glow">
-                        <fegaussianblur className="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
-                        <femerge>
-                            <femergenode in="coloredBlur"></femergenode>
-                            <femergenode in="SourceGraphic"></femergenode>
-                        </femerge>
-                    </filter>
-                </defs>
-            </svg>
-
             <h2 className='page_not_found'>Page Not Found</h2>
         </>
     )
