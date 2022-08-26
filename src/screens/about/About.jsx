@@ -34,11 +34,13 @@ const About = () => {
               <small>{experienceYears}+ Years Working</small>
             </article>
 
+            {/* 
             <article className='about__card'>
               <FiUsers className='about__icon' />
               <h5>temp</h5>
               <small>temp</small>
-            </article>
+            </article> 
+            */}
 
             <article className='about__card'>
               <VscFolderLibrary className='about__icon' />

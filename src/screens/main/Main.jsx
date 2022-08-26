@@ -22,7 +22,7 @@ const Main = () => {
             {/* <Services /> */}
             <Blog />
             <Portfolio />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Contact />
             <Footer />
         </>
