@@ -21,6 +21,7 @@ const App = () => {
                 <Route path="/" element={<Main />} />
                 <Route path="ethereum_gwei_tracker_privacy_policy" element={<Policy title={"ethereum"} />} />
                 <Route path="biometric_password_protection_privacy_policy" element={<Policy title={"biometric"}/>} />
+                <Route path="twas_privacy_policy" element={<Policy title={"twas"}/>} />
             </Routes>
         </>
     )
