@@ -3,6 +3,7 @@ import './portfolio.css'
 
 import IMG1 from '../../assets/eth_bg_logo.png'
 import IMG2 from '../../assets/portfolio2.png'
+import IMG3 from '../../assets/twas.png'
 
 const data = [
   {
@@ -14,12 +15,20 @@ const data = [
     link2: 'https://play.google.com/store/apps/details?id=com.ethereumgastracker'
   },
   {
-    id: 1,
+    id: 2,
     title: 'Biometric Password Protection',
     image: IMG2,
     description: `Developed so you can securely store and create your passwords`,
     link1: 'https://www.github.com/ismailonur',
     link2: 'https://play.google.com/store/apps/details?id=com.biometricpasswordprotection'
+  },
+  {
+    id: 3,
+    title: 'TWAS <br/> Think! Write! Access!',
+    image: IMG3,
+    description: `TWAS is an online note taking application developed by Friday Team. <br/> Since it is online, it provides ease of access to your notes whenever you want, with any mobile device.`,
+    link1: 'https://www.github.com/ismailonur',
+    link2: 'https://play.google.com/store/apps/details?id=com.friday.twas'
   },
 ]
 
@@ -40,7 +49,7 @@ const Portfolio = () => {
                 <div className='portfolio__item_body'>
                   <div>
                     <h2 dangerouslySetInnerHTML={{ __html: title }} />
-                    <h5>{description}</h5>
+                    <h5 dangerouslySetInnerHTML={{ __html: description }} />
                   </div>
                   <br />
                   <div className='portfolio__item-cta'>
