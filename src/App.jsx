@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 import {
     Main,
-    Policy
+    Policy,
+    Status404
 } from './screens'
 
 import ReactGA from 'react-ga';
@@ -18,6 +19,7 @@ const App = () => {
     return (
         <>
             <Routes>
+                <Route path="*" element={<Status404 />} />
                 <Route path="/" element={<Main />} />
                 <Route path="ethereum_gwei_tracker_privacy_policy" element={<Policy title={"ethereum"} />} />
                 <Route path="biometric_password_protection_privacy_policy" element={<Policy title={"biometric"}/>} />
