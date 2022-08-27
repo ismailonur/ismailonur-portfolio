@@ -6,8 +6,11 @@ import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
 import { useEffect } from 'react'
 
+import { useLanguage } from '../../components/languageComp/index.js';
+
 const About = () => {
   const [experienceYears, setExperienceYears] = React.useState(0)
+  const { translate } = useLanguage();
 
   useEffect(() => {
     const temp = new Date().getFullYear();
@@ -17,7 +20,7 @@ const About = () => {
   return (
     <section id='about'>
       <h5>Get To Know</h5>
-      <h2>About me</h2>
+      <h2>{translate("about_me")}</h2>
 
       <div className='container about__container'>
         <div className='about__me'>

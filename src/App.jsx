@@ -7,6 +7,8 @@ import {
     Status404
 } from './screens'
 
+import { LanguageProvider } from './components/languageComp';
+
 import ReactGA from 'react-ga';
 const TRACKING_ID = "UA-150454474-1";
 
@@ -17,7 +19,7 @@ const App = () => {
     }, []);
 
     return (
-        <>
+        <LanguageProvider>
             <Routes>
                 <Route path="*" element={<Status404 />} />
                 <Route path="/" element={<Main />} />
@@ -25,7 +27,7 @@ const App = () => {
                 <Route path="biometric_password_protection_privacy_policy" element={<Policy title={"biometric"}/>} />
                 <Route path="twas_privacy_policy" element={<Policy title={"twas"}/>} />
             </Routes>
-        </>
+        </LanguageProvider>
     )
 }
 

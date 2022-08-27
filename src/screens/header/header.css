@@ -50,14 +50,38 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
-/* ================ SCROLL DOWN ================ */
-.scroll__down {
+.header_right {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     right: -2.3rem;
     bottom: 5rem;
-    transform: rotate(90deg);
     font-weight: 300;
     font-size: 1rem;
+    gap: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ================ LANGUAGE ================ */
+.language {
+    display: flex;
+    padding: 2px 4px;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.language:hover {
+    background-color: var(--color-white);
+    color: var(--color-bg);
+}
+
+.scroll_down {
+    transform: rotate(90deg);
 }
 
 /* ============ MEDIUM DEVICES  ============ */
@@ -74,7 +98,15 @@ header {
         height: 100vh;
     }
 
-    .header__socials, .scroll__down {
+    .header__socials, .scroll_down {
         display: none;
+    }
+
+    .header_right {
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        top: 0;
+        right: 0;
     }
 }
