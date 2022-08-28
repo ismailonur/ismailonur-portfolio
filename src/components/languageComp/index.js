@@ -5,7 +5,7 @@ import languages from "../../languages/index.jsx";
 const LanguageContext = React.createContext();
 
 const LanguageProvider = (props) => {
-    const [lang, setLang] = useState("TR");
+    const [lang, setLang] = useState("EN");
 
     const toggleLang = () => {
         if (lang === "EN")

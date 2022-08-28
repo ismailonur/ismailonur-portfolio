@@ -33,7 +33,7 @@ const Header = () => {
         <div className='header_right'>
           <a className='language'
             onClick={() => toggleLang()}>
-            {lang}
+            {lang === "EN" ? "TR" : "EN"}
           </a>
           <a href="#contact" className='scroll_down'>Scroll Down</a>
         </div>
