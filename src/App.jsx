@@ -28,6 +28,8 @@ const App = () => {
                 <Route path="twas_privacy_policy" element={<Policy title={"twas"}/>} />
                 <Route path="happy_animalls_sticker_privacy_policy" element={<Policy title={"animals_stickers"}/>} />
                 <Route path="stickers_for_whatsapp_privacy_policy" element={<Policy title={"stickers"}/>} />
+                <Route path="decimal_converter_privacy_policy" element={<Policy title={"decimal_converter"}/>} />
+                <Route path="motolorji_sticker_packs_privacy_policy" element={<Policy title={"motolorji_sticker"}/>} />
             </Routes>
         </LanguageProvider>
     )

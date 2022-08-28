@@ -100,6 +100,38 @@ const Policy = ({ title }) => {
                     </p>
                 </>
             }
+            {
+                title === 'decimal_converter' &&
+                <>
+                    <h1>Decimal Converter <br /> Privacy Policy</h1>
+                    <p>
+                        <strong>
+                            EN: The application does not collect or use any user data.
+                        </strong>
+                    </p>
+                    <p>
+                        <strong>
+                            TR: Decimal Converter uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.
+                        </strong>
+                    </p>
+                </>
+            }
+            {
+                title === 'motolorji_sticker' &&
+                <>
+                    <h1> Motolorji Sticker Packs <br /> Privacy Policy</h1>
+                    <p>
+                        <strong>
+                            EN: The application does not collect or use any user data.
+                        </strong>
+                    </p>
+                    <p>
+                        <strong>
+                            TR: Motolorji Sticker Packs uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.
+                        </strong>
+                    </p>
+                </>
+            }
         </div>
     )
 }
