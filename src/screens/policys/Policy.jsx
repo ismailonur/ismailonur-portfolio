@@ -68,6 +68,38 @@ const Policy = ({ title }) => {
                     </p>
                 </>
             }
+            {
+                title === 'stickers' &&
+                <>
+                    <h1>Stickers for WhatsApp (WAStickers)<br /> Privacy Policy</h1>
+                    <p>
+                        <strong>
+                            EN: The application does not collect or use any user data.
+                        </strong>
+                    </p>
+                    <p>
+                        <strong>
+                            TR: Stickers for WhatsApp (WAStickers) uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.
+                        </strong>
+                    </p>
+                </>
+            }
+            {
+                title === 'animals_stickers' &&
+                <>
+                    <h1>Happy Animalls Sticker for WhatsApp (WAStickers)<br /> Privacy Policy</h1>
+                    <p>
+                        <strong>
+                            EN: The application does not collect or use any user data.
+                        </strong>
+                    </p>
+                    <p>
+                        <strong>
+                            TR: Happy Animalls Sticker for WhatsApp (WAStickers) uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.
+                        </strong>
+                    </p>
+                </>
+            }
         </div>
     )
 }

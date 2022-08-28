@@ -26,6 +26,8 @@ const App = () => {
                 <Route path="ethereum_gwei_tracker_privacy_policy" element={<Policy title={"ethereum"} />} />
                 <Route path="biometric_password_protection_privacy_policy" element={<Policy title={"biometric"}/>} />
                 <Route path="twas_privacy_policy" element={<Policy title={"twas"}/>} />
+                <Route path="happy_animalls_sticker_privacy_policy" element={<Policy title={"animals_stickers"}/>} />
+                <Route path="stickers_for_whatsapp_privacy_policy" element={<Policy title={"stickers"}/>} />
             </Routes>
         </LanguageProvider>
     )
