@@ -1,6 +1,8 @@
 import React from 'react'
 import './blog.css'
 
+import T from '../../components/T'
+
 import IMG1 from '../../assets/blog1.png'
 import IMG2 from '../../assets/blog2.png'
 import IMG3 from '../../assets/blog3.png'
@@ -56,8 +58,8 @@ const data = [
 const Blog = () => {
     return (
         <section id='blog'>
-            <h5>My Blog Posts</h5>
-            <h2>Blog</h2>
+            <h5><T>my_blog_posts</T></h5>
+            <h2><T>blog</T></h2>
 
             <div className='container blog__container'>
                 {
@@ -70,7 +72,7 @@ const Blog = () => {
                                 <div className='blog__item_bottom'>
                                     <h3>{title}</h3>
                                     <div className='blog__item-cta'>
-                                        <a href={link} className='btn' target='_blank'>Read</a>
+                                        <a href={link} className='btn' target='_blank'><T>read</T></a>
                                     </div>
                                 </div>
                             </article>

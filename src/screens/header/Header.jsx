@@ -5,23 +5,21 @@ import CTA from './CTA';
 import ME from '../../assets/me.png';
 import HeaderSocials from './HeaderSocials';
 
-import {
-  LanguageProvider,
-  useLanguage
-} from '../../components/languageComp/index.js';
+import T from '../../components/T';
+
+import { useLanguage } from '../../components/languageComp/index.js';
 
 const Header = () => {
-  const [language, setLanguage] = React.useState("EN");
-  const { toggleLang, translate, lang } = useLanguage();
+  const { toggleLang, lang } = useLanguage();
 
   return (
     <header>
       <div className='container header__container'>
-        <h4>{translate("hello")} I'm</h4>
+        <h4><T>hello</T> <T>im</T></h4>
         <h1>İsmail Onur</h1>
-        <h4>Software Engineer</h4>
-        <h5>Mobile (React-Native) Developer</h5>
-        <h5>React.js Developer</h5>
+        <h4><T>software_engineer</T></h4>
+        <h5><T>mobile</T> (React-Native) <T>developer</T></h5>
+        <h5>React.js <T>developer</T></h5>
 
         <CTA />
         <HeaderSocials />
@@ -35,7 +33,7 @@ const Header = () => {
             onClick={() => toggleLang()}>
             {lang === "EN" ? "TR" : "EN"}
           </a>
-          <a href="#contact" className='scroll_down'>Scroll Down</a>
+          <a href="#contact" className='scroll_down'><T>scroll_down</T></a>
         </div>
       </div>
     </header>

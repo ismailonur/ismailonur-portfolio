@@ -1,6 +1,8 @@
 import React from 'react'
 import './portfolio.css'
 
+import T from '../../components/T'
+
 import IMG1 from '../../assets/eth_bg_logo.png'
 import IMG2 from '../../assets/portfolio2.png'
 import IMG3 from '../../assets/twas.png'
@@ -35,8 +37,8 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5><T>my_recent_work</T></h5>
+      <h2><T>portfolio</T></h2>
 
       <div className='container portfolio__container'>
         {

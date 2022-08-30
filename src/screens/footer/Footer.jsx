@@ -1,6 +1,8 @@
 import React from 'react'
 import './footer.css'
 
+import T from '../../components/T'
+
 import { FaGithub } from 'react-icons/fa'
 import { BsLinkedin } from 'react-icons/bs'
 import { useEffect } from 'react'
@@ -18,28 +20,28 @@ const Footer = () => {
 
       <ul className="permalinks">
         <li>
-          <a href='#'>Home</a>
+          <a href='#'><T>home</T></a>
         </li>
         <li>
-          <a href='#about'>About</a>
+          <a href='#about'><T>about</T></a>
         </li>
         <li>
-          <a href='#experience'>Experience</a>
+          <a href='#experience'><T>experience</T></a>
         </li>
         {/* <li>
           <a href='#services'>Services</a>
         </li> */}
         <li>
-          <a href='#blog'>Blog</a>
+          <a href='#blog'><T>blog</T></a>
         </li>
         <li>
-          <a href='#portfolio'>Portfolio</a>
+          <a href='#portfolio'><T>portfolio</T></a>
         </li>
+        {/* <li>
+          <a href='#testimonials'><T>testimonials</T></a>
+        </li> */}
         <li>
-          <a href='#testimonials'>Testimonials</a>
-        </li>
-        <li>
-          <a href='#contact'>Contact</a>
+          <a href='#contact'><T>contact</T></a>
         </li>
       </ul>
 
@@ -50,7 +52,7 @@ const Footer = () => {
 
       <div className="footer__copyright">
         <small>
-          &copy; Copyright {yearNow}. All rights reserved.
+          &copy; Copyright {yearNow}. <T>all_rights_reserved</T>
         </small>
       </div>
     </footer>
