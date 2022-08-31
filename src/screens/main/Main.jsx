@@ -23,8 +23,8 @@ const ldJson = {
         "name": "İsmail Onur"
     },
     "datePublished": "2022-08-15",
-    "dateModified": "2020-08-26",
-    "description": "İsmail Onur - Software Engineer - Mobile (React-Native) Developer",
+    "dateModified": "2020-08-31",
+    "description": "İsmail Onur - Software Engineer, Mobile (React-Native) Developer",
     "images": [
         {
             "@type": "ImageObject",
@@ -49,6 +49,7 @@ const Main = () => {
                 <meta name="twitter:card" content="İsmail Onur - Software Engineer" />
                 <meta name="twitter:site" content="@ionurdev" />
                 <meta name="twitter:creator" content="@ionurdev" />
+                <meta name="description" content="İsmail Onur - Software Engineer, Mobil (React-Native) Developer" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="İsmail Onur - Software Engineer" />
