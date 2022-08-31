@@ -25,7 +25,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div className='me'>
-          <img src={ME} alt='me' />
+          <img src={ME} alt='İsmail Onur, Profil Resmi' />
         </div>
 
         <div className='header_right'>

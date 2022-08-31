@@ -14,7 +14,8 @@ const data = [
     image: IMG1,
     description: 'As a result of the calculations, transaction fees on the ETHEREUM network are calculated. The value that matters here is the GWEI. It is cheaper to trade when the GWEI value is low. Thanks to this application, you can track the GWEI value, create notifications whenever you want, and make cheap transactions on the ETHEREUM network.',
     link1: 'https://www.github.com/ismailonur',
-    link2: 'https://play.google.com/store/apps/details?id=com.ethereumgastracker'
+    link2: 'https://play.google.com/store/apps/details?id=com.ethereumgastracker',
+    alt: 'Ethereum Gas Tracker & Notifications'
   },
   {
     id: 2,
@@ -22,7 +23,8 @@ const data = [
     image: IMG2,
     description: `Developed so you can securely store and create your passwords`,
     link1: 'https://www.github.com/ismailonur',
-    link2: 'https://play.google.com/store/apps/details?id=com.biometricpasswordprotection'
+    link2: 'https://play.google.com/store/apps/details?id=com.biometricpasswordprotection',
+    alt: 'Biometric Password Protection'
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ const data = [
     image: IMG3,
     description: `TWAS is an online note taking application developed by Friday Team. <br/> Since it is online, it provides ease of access to your notes whenever you want, with any mobile device.`,
     link1: 'https://www.github.com/ismailonur',
-    link2: 'https://play.google.com/store/apps/details?id=com.friday.twas'
+    link2: 'https://play.google.com/store/apps/details?id=com.friday.twas',
+    alt: 'TWAS Think! Write! Access!'
   },
 ]
 
@@ -42,11 +45,19 @@ const Portfolio = () => {
 
       <div className='container portfolio__container'>
         {
-          data.map(({ id, image, title, description = '', link1, link2 = 'https://www.google.com' }, index) => {
+          data.map(({
+            id,
+            image,
+            title,
+            description = '',
+            link1 = 'https://www.github.com/ismailonur',
+            link2 = 'https://play.google.com/store/apps/developer?id=Friday+Team',
+            alt
+          }, index) => {
             return (
               <article className='portfolio__item' key={id}>
                 <div className='portfolio__item-img'>
-                  <img src={image} alt='' />
+                  <img src={image} alt={alt} />
                 </div>
                 <div className='portfolio__item_body'>
                   <div>
