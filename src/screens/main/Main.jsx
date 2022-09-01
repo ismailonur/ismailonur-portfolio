@@ -12,8 +12,6 @@ import {
     Footer
 } from '../index';
 
-import { Helmet } from 'react-helmet';
-
 const ldJson = {
     "@context": "https://schema.org/",
     "@type": "WebPage",
@@ -40,28 +38,6 @@ const ldJson = {
 const Main = () => {
     return (
         <>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>İsmail Onur</title>
-                <link rel="canonical" href="https://ismailonur.dev" />
-                <link rel='shortlink' href='https://ismailonur.dev' />
-
-                <meta name="twitter:card" content="İsmail Onur - Software Engineer" />
-                <meta name="twitter:site" content="@ionurdev" />
-                <meta name="twitter:creator" content="@ionurdev" />
-                <meta name="description" content="İsmail Onur - Software Engineer, Mobil (React-Native) Developer" />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="İsmail Onur - Software Engineer" />
-                <meta property="og:site_name" content="İsmail Onur" />
-                <meta property="og:description" content="Software Engineer, Mobil (React-Native) Developer" />
-                <meta property="og:url" content="https://ismailonur.dev" />
-                <meta property="og:locale" content="tr_TR" />
-
-                <script type="application/ld+json">
-                    {JSON.stringify(ldJson)}
-                </script>
-            </Helmet>
             <Header />
             <Nav />
             <About />
