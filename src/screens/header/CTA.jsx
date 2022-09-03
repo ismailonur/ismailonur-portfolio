@@ -1,5 +1,4 @@
 import React from 'react'
-import CV from '../../assets/cv.pdf'
 
 import T from '../../components/T'
 
