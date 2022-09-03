@@ -3,9 +3,9 @@ import './portfolio.css'
 
 import T from '../../components/T'
 
-import IMG1 from '../../assets/eth_bg_logo.webp'
-import IMG2 from '../../assets/portfolio2.webp'
-import IMG3 from '../../assets/twas.webp'
+import IMG1 from '../../assets/eth_bg_logo.png'
+import IMG2 from '../../assets/portfolio2.png'
+import IMG3 from '../../assets/twas.png'
 
 const data = [
   {

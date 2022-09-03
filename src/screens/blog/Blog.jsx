@@ -3,12 +3,12 @@ import './blog.css'
 
 import T from '../../components/T'
 
-import IMG1 from '../../assets/blog1.webp'
-import IMG2 from '../../assets/blog2.webp'
-import IMG3 from '../../assets/blog3.webp'
-import IMG4 from '../../assets/blog4.webp'
-import IMG5 from '../../assets/blog5.webp'
-import IMG6 from '../../assets/blog6.webp'
+import IMG1 from '../../assets/blog1.png'
+import IMG2 from '../../assets/blog2.png'
+import IMG3 from '../../assets/blog3.png'
+import IMG4 from '../../assets/blog4.png'
+import IMG5 from '../../assets/blog5.png'
+import IMG6 from '../../assets/blog6.png'
 
 const data = [
     {
