@@ -4,10 +4,10 @@ import './header.css'
 import CTA from './CTA';
 import ME from '../../assets/me.webp';
 import HeaderSocials from './HeaderSocials';
-
 import T from '../../components/T';
-
 import { useLanguage } from '../../components/languageComp/index.js';
+
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { toggleLang, lang } = useLanguage();
@@ -29,10 +29,10 @@ const Header = () => {
         </div>
 
         <div className='header_right'>
-          <a className='language'
-            onClick={() => toggleLang()}>
+          <Link to={lang === "EN" ? "/tr" : "/en"} className='language'
+            >
             {lang === "EN" ? "TR" : "EN"}
-          </a>
+          </Link>
           <a href="#contact" className='scroll_down'><T>scroll_down</T></a>
         </div>
       </div>

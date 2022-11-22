@@ -23,6 +23,8 @@ const App = () => {
             <Routes>
                 <Route path="*" element={<Status404 />} />
                 <Route path="/" element={<Main />} />
+                <Route path="/tr" element={<Main language="TR" />} />
+                <Route path="/en" element={<Main language="EN" />} />
                 <Route path="ethereum_gwei_tracker_privacy_policy" element={<Policy title={"ethereum"} />} />
                 <Route path="biometric_password_protection_privacy_policy" element={<Policy title={"biometric"}/>} />
                 <Route path="twas_privacy_policy" element={<Policy title={"twas"}/>} />

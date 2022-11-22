@@ -7,7 +7,11 @@ const LanguageContext = React.createContext();
 const LanguageProvider = (props) => {
     const [lang, setLang] = useState("EN");
 
-    const toggleLang = () => {
+    const toggleLang = (language) => {
+        if(language){
+            setLang(language);
+            return;
+        }
         if (lang === "EN")
             setLang("TR");
         else
