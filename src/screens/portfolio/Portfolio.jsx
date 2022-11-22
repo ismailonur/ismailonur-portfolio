@@ -13,7 +13,8 @@ const data = [
     title: 'Ethereum Gas Tracker <br/> & Notifications',
     image: IMG1,
     description: 'As a result of the calculations, transaction fees on the ETHEREUM network are calculated. The value that matters here is the GWEI. It is cheaper to trade when the GWEI value is low. Thanks to this application, you can track the GWEI value, create notifications whenever you want, and make cheap transactions on the ETHEREUM network.',
-    link1: 'https://www.github.com/ismailonur',
+    link1_title: 'App Store',
+    link1: 'https://apps.apple.com/us/app/eth-gas-tracker-alerts/id6444177446',
     link2: 'https://play.google.com/store/apps/details?id=com.ethereumgastracker',
     alt: 'Ethereum Gas Tracker & Notifications'
   },
@@ -22,7 +23,8 @@ const data = [
     title: 'Biometric Password Protection',
     image: IMG2,
     description: `Developed so you can securely store and create your passwords`,
-    link1: 'https://www.github.com/ismailonur',
+    link1_title: 'GitHub',
+    link1: 'https://github.com/ismailonur/Biometric-Password-Protection',
     link2: 'https://play.google.com/store/apps/details?id=com.biometricpasswordprotection',
     alt: 'Biometric Password Protection'
   },
@@ -31,7 +33,8 @@ const data = [
     title: 'TWAS <br/> Think! Write! Access!',
     image: IMG3,
     description: `TWAS is an online note taking application developed by Friday Team. <br/> Since it is online, it provides ease of access to your notes whenever you want, with any mobile device.`,
-    link1: 'https://www.github.com/ismailonur',
+    link1_title: 'GitHub',
+    link1: 'https://github.com/ismailonur/twas',
     link2: 'https://play.google.com/store/apps/details?id=com.friday.twas',
     alt: 'TWAS Think! Write! Access!'
   },
@@ -50,6 +53,7 @@ const Portfolio = () => {
             image,
             title,
             description = '',
+            link1_title,
             link1 = 'https://www.github.com/ismailonur',
             link2 = 'https://play.google.com/store/apps/developer?id=Friday+Team',
             alt
@@ -66,7 +70,7 @@ const Portfolio = () => {
                   </div>
                   <br />
                   <div className='portfolio__item-cta'>
-                    <a href={link1} className='btn' target='_blank'>GitHub</a>
+                    <a href={link1} className='btn' target='_blank'>{link1_title}</a>
                     <a href={link2} className='btn btn-primary' target='_blank'>Play Store</a>
                   </div>
                 </div>
