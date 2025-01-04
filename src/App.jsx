@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Routes, Route } from "react-router-dom";
 
 import {
@@ -9,15 +9,18 @@ import {
 
 import { LanguageProvider } from './components/languageComp';
 
-import ReactGA from 'react-ga';
-const TRACKING_ID = "UA-150454474-1";
+const policyRoutes = {
+    ethereum: 'ethereum_gwei_tracker_privacy_policy',
+    biometric: 'biometric_password_protection_privacy_policy',
+    twas: 'twas_privacy_policy',
+    stickers: 'stickers_for_whatsapp_privacy_policy',
+    animals_stickers: 'happy_animalls_sticker_privacy_policy',
+    decimal_converter: 'decimal_converter_privacy_policy',
+    motolorji_sticker: 'motolorji_sticker_packs_privacy_policy',
+    pdf_viewer: 'pdf_viewer_privacy_policy',
+};
 
 const App = () => {
-    useEffect(() => {
-        ReactGA.initialize(TRACKING_ID);
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
-
     return (
         <LanguageProvider>
             <Routes>
@@ -25,13 +28,15 @@ const App = () => {
                 <Route path="/" element={<Main />} />
                 <Route path="/tr" element={<Main language="TR" />} />
                 <Route path="/en" element={<Main language="EN" />} />
-                <Route path="ethereum_gwei_tracker_privacy_policy" element={<Policy title={"ethereum"} />} />
-                <Route path="biometric_password_protection_privacy_policy" element={<Policy title={"biometric"}/>} />
-                <Route path="twas_privacy_policy" element={<Policy title={"twas"}/>} />
-                <Route path="happy_animalls_sticker_privacy_policy" element={<Policy title={"animals_stickers"}/>} />
-                <Route path="stickers_for_whatsapp_privacy_policy" element={<Policy title={"stickers"}/>} />
-                <Route path="decimal_converter_privacy_policy" element={<Policy title={"decimal_converter"}/>} />
-                <Route path="motolorji_sticker_packs_privacy_policy" element={<Policy title={"motolorji_sticker"}/>} />
+
+                {/* Policy routes */}
+                {Object.entries(policyRoutes).map(([key, path]) => (
+                    <Route
+                        key={path}
+                        path={path}
+                        element={<Policy title={key} />}
+                    />
+                ))}
             </Routes>
         </LanguageProvider>
     )
