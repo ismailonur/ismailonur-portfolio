@@ -2,7 +2,7 @@
   "name": "ismailonur-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ismailonur.github.io/ismailonur-portfolio",
+  "homepage": "https://ismailonur.github.io",
   "dependencies": {
     "@serdarakkus/hyper": "^1.0.5",
     "@testing-library/jest-dom": "^5.16.4",
