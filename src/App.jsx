@@ -24,7 +24,6 @@ const App = () => {
     return (
         <LanguageProvider>
             <Routes>
-                <Route path="*" element={<Status404 />} />
                 <Route path="/" element={<Main />} />
                 <Route path="/tr" element={<Main language="TR" />} />
                 <Route path="/en" element={<Main language="EN" />} />
@@ -33,10 +32,13 @@ const App = () => {
                 {Object.entries(policyRoutes).map(([key, path]) => (
                     <Route
                         key={path}
-                        path={path}
+                        path={`/${path}`}
                         element={<Policy title={key} />}
                     />
                 ))}
+
+                {/* 404 route should be last */}
+                <Route path="*" element={<Status404 />} />
             </Routes>
         </LanguageProvider>
     )
