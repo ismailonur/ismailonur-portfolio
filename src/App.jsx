@@ -24,7 +24,7 @@ const App = () => {
     return (
         <LanguageProvider>
             <Routes>
-                <Route path="/" element={<Main />} />
+                <Route path="/ismailonur-portfolio" element={<Main />} />
                 <Route path="/tr" element={<Main language="TR" />} />
                 <Route path="/en" element={<Main language="EN" />} />
 
