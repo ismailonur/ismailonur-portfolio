@@ -30,12 +30,12 @@ const Contact = () => {
             <MdOutlineEmail className="contact__icon" />
             <h4>Email</h4>
             <h5>ismailonurdev@gmail.com</h5>
-            <a href="mailto:ismailonurdev@gmail.com" target="_blank"><T>send_a_message</T></a>
+            <a href="mailto:ismailonurdev@gmail.com" target="_blank" rel="noreferrer"><T>send_a_message</T></a>
           </article>
           <article className="contact__option">
             <BsTelegram className="contact__icon" />
             <h4>Telegram</h4>
-            <a href="https://t.me/ionurdev" target="_blank"><T>send_a_message</T></a>
+            <a href="https://t.me/ionurdev" target="_blank" rel="noreferrer"><T>send_a_message</T></a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>

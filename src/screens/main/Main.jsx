@@ -14,15 +14,15 @@ import { useLanguage } from '../../components/languageComp';
 import { useEffect } from 'react';
 
 const Main = (props) => {
-    const { toggleLang, lang } = useLanguage();
+    const { toggleLang } = useLanguage();
     useEffect(() => {
         if (props.language)
             toggleLang(props.language);
-        if (props.language == "TR")
+        if (props.language === "TR")
             document.title = "İsmail Onur - Yazılım Mühendisi";
-        if (props.language == "EN")
+        if (props.language === "EN")
             document.title = "İsmail Onur - Software Engineer";
-    }, [props.language]);
+    }, [props.language, toggleLang]);
 
     return (
         <>

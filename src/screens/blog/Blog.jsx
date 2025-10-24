@@ -78,7 +78,7 @@ const Blog = () => {
                                 <div className='blog__item_bottom'>
                                     <h3>{title}</h3>
                                     <div className='blog__item-cta'>
-                                        <a href={link} className='btn' target='_blank'><T>read</T></a>
+                                        <a href={link} className='btn' target='_blank' rel="noreferrer"><T>read</T></a>
                                     </div>
                                 </div>
                             </article>

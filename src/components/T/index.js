@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { useLanguage } from '../languageComp/index.js';
 
 const T = (props) => {

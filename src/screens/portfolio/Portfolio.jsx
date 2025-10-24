@@ -70,8 +70,8 @@ const Portfolio = () => {
                   </div>
                   <br />
                   <div className='portfolio__item-cta'>
-                    <a href={link1} className='btn' target='_blank'>{link1_title}</a>
-                    <a href={link2} className='btn btn-primary' target='_blank'>Play Store</a>
+                    <a href={link1} className='btn' target='_blank' rel="noreferrer">{link1_title}</a>
+                    <a href={link2} className='btn btn-primary' target='_blank' rel="noreferrer">Play Store</a>
                   </div>
                 </div>
               </article>
