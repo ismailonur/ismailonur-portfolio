@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ismailonur-portfolio/static/css/main.8d785d89.css",
-    "main.js": "/ismailonur-portfolio/static/js/main.c8984547.js",
-    "static/media/me-about.jpg": "/ismailonur-portfolio/static/media/me-about.71f6b28667b7bc019243.jpg",
-    "static/media/me.png": "/ismailonur-portfolio/static/media/me.cc1d97127d8223addcdf.png",
-    "static/media/blog1.png": "/ismailonur-portfolio/static/media/blog1.9b24196f3fa80bf6866e.png",
-    "static/media/portfolio2.png": "/ismailonur-portfolio/static/media/portfolio2.efb48c49ac86ffa1e395.png",
-    "static/media/eth_bg_logo.png": "/ismailonur-portfolio/static/media/eth_bg_logo.77dd4b4a3dd1ea22ae77.png",
-    "static/media/blog6.png": "/ismailonur-portfolio/static/media/blog6.598662a145c5131af451.png",
-    "static/media/blog5.png": "/ismailonur-portfolio/static/media/blog5.c6fe4d6cd64c9d0df256.png",
-    "static/media/me.webp": "/ismailonur-portfolio/static/media/me.813a98100d3363678f9b.webp",
-    "static/media/twas.png": "/ismailonur-portfolio/static/media/twas.7304d15b47ddcb4f72a5.png",
-    "static/media/blog3.png": "/ismailonur-portfolio/static/media/blog3.75ecca8bac2bb3283d39.png",
-    "index.html": "/ismailonur-portfolio/index.html"
+    "main.css": "/static/css/main.8d785d89.css",
+    "main.js": "/static/js/main.1979ed2a.js",
+    "static/media/me-about.jpg": "/static/media/me-about.71f6b28667b7bc019243.jpg",
+    "static/media/me.png": "/static/media/me.cc1d97127d8223addcdf.png",
+    "static/media/blog1.png": "/static/media/blog1.9b24196f3fa80bf6866e.png",
+    "static/media/portfolio2.png": "/static/media/portfolio2.efb48c49ac86ffa1e395.png",
+    "static/media/eth_bg_logo.png": "/static/media/eth_bg_logo.77dd4b4a3dd1ea22ae77.png",
+    "static/media/blog6.png": "/static/media/blog6.598662a145c5131af451.png",
+    "static/media/blog5.png": "/static/media/blog5.c6fe4d6cd64c9d0df256.png",
+    "static/media/me.webp": "/static/media/me.813a98100d3363678f9b.webp",
+    "static/media/twas.png": "/static/media/twas.7304d15b47ddcb4f72a5.png",
+    "static/media/blog3.png": "/static/media/blog3.75ecca8bac2bb3283d39.png",
+    "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.8d785d89.css",
-    "static/js/main.c8984547.js"
+    "static/js/main.1979ed2a.js"
   ]
 }
