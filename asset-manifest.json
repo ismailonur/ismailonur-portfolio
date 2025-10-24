@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ismailonur-portfolio/static/css/main.8d785d89.css",
-    "main.js": "/ismailonur-portfolio/static/js/main.c7016e95.js",
+    "main.js": "/ismailonur-portfolio/static/js/main.c8984547.js",
     "static/media/me-about.jpg": "/ismailonur-portfolio/static/media/me-about.71f6b28667b7bc019243.jpg",
     "static/media/me.png": "/ismailonur-portfolio/static/media/me.cc1d97127d8223addcdf.png",
     "static/media/blog1.png": "/ismailonur-portfolio/static/media/blog1.9b24196f3fa80bf6866e.png",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.8d785d89.css",
-    "static/js/main.c7016e95.js"
+    "static/js/main.c8984547.js"
   ]
 }
