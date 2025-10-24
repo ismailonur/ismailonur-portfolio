@@ -5,7 +5,7 @@ import CTA from './CTA';
 import ME from '../../assets/me.webp';
 import HeaderSocials from './HeaderSocials';
 import T from '../../components/T';
-import { useLanguage } from '../../components/languageComp/index.js';
+import { useLanguage } from '../../components/languageComp';
 
 import { Link } from "react-router-dom";
 

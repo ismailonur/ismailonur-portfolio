@@ -1,4 +1,4 @@
-const lang = require('@serdarakkus/hyper/localization');
+import lang from '@serdarakkus/hyper/localization';
 
 const languages = new lang();
 

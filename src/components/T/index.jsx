@@ -1,4 +1,4 @@
-import { useLanguage } from '../languageComp/index.js';
+import { useLanguage } from '../languageComp';
 
 const T = (props) => {
     const { translate } = useLanguage();
