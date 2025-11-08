@@ -25,15 +25,23 @@ const Header = () => {
         <HeaderSocials />
 
         <div className='me'>
-          <img src={ME} alt='İsmail Onur, Profil Resmi' />
+          <img src={ME} alt='İsmail Onur, Software Engineer' />
         </div>
 
         <div className='header_right'>
-          <Link to={lang === "EN" ? "/tr" : "/en"} className='language'
+          <Link 
+            to={lang === "EN" ? "/tr" : "/en"} 
+            className='language'
+            aria-label={`Switch language to ${lang === "EN" ? "Turkish" : "English"}`}
             >
             {lang === "EN" ? "TR" : "EN"}
           </Link>
-          <a href="#contact" className='scroll_down'><T>scroll_down</T></a>
+          <a 
+            href="#contact" 
+            className='scroll_down'
+            aria-label="Scroll down to next section">
+            <T>scroll_down</T>
+          </a>
         </div>
       </div>
     </header>

@@ -27,22 +27,67 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineEmail className="contact__icon" />
+            <MdOutlineEmail className="contact__icon" aria-hidden="true" />
             <h4>Email</h4>
             <h5>ismailonurdev@gmail.com</h5>
-            <a href="mailto:ismailonurdev@gmail.com" target="_blank" rel="noreferrer"><T>send_a_message</T></a>
+            <a 
+              href="mailto:ismailonurdev@gmail.com" 
+              target="_blank" 
+              rel="noreferrer"
+              aria-label="Send an email to ismailonurdev@gmail.com">
+              <T>send_a_message</T>
+            </a>
           </article>
           <article className="contact__option">
-            <BsTelegram className="contact__icon" />
+            <BsTelegram className="contact__icon" aria-hidden="true" />
             <h4>Telegram</h4>
-            <a href="https://t.me/ionurdev" target="_blank" rel="noreferrer"><T>send_a_message</T></a>
+            <a 
+              href="https://t.me/ionurdev" 
+              target="_blank" 
+              rel="noreferrer"
+              aria-label="Send a message on Telegram">
+              <T>send_a_message</T>
+            </a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder="Your Full Name" required />
-          <input type="email" name='email' placeholder="Your Email" required />
-          <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-          <button type="submit" className='btn btn-primary'><T>send_message</T></button>
+        <form ref={form} onSubmit={sendEmail} aria-label="Contact form">
+          <label htmlFor="contact-name" className="sr-only">Your Full Name</label>
+          <input 
+            type="text" 
+            id="contact-name"
+            name='name' 
+            placeholder="Your Full Name"
+            aria-required="true"
+            required 
+          />
+          
+          <label htmlFor="contact-email" className="sr-only">Your Email</label>
+          <input 
+            type="email" 
+            id="contact-email"
+            name='email' 
+            placeholder="Your Email"
+            aria-required="true"
+            required 
+          />
+          
+          <label htmlFor="contact-message" className="sr-only">Your Message</label>
+          <textarea 
+            id="contact-message"
+            name="message" 
+            cols="30" 
+            rows="10" 
+            placeholder="Your Message"
+            aria-required="true"
+            required>
+          </textarea>
+          
+          <button 
+            type="submit" 
+            className='btn btn-primary'
+            aria-label="Send contact message">
+            <T>send_message</T>
+          </button>
         </form>
       </div>
     </section>

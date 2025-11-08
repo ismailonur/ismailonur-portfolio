@@ -21,36 +21,46 @@ const Nav = () => {
   }
 
   return (
-    <nav>
+    <nav aria-label="Main navigation">
       <a
         href="#"
         onClick={() => handleNavClick('#')}
-        className={activeNav === '#' ? 'active' : ''}>
-        <AiOutlineHome />
+        className={activeNav === '#' ? 'active' : ''}
+        aria-label="Go to home section"
+        aria-current={activeNav === '#' ? 'page' : undefined}>
+        <AiOutlineHome aria-hidden="true" />
       </a>
       <a
         href="#about"
         onClick={() => handleNavClick('#about')}
-        className={activeNav === '#about' ? 'active' : ''}>
-        <AiOutlineUser />
+        className={activeNav === '#about' ? 'active' : ''}
+        aria-label="Go to about section"
+        aria-current={activeNav === '#about' ? 'page' : undefined}>
+        <AiOutlineUser aria-hidden="true" />
       </a>
       <a
         href="#blog"
         onClick={() => handleNavClick('#blog')}
-        className={activeNav === '#experience' ? 'active' : ''}>
-        <BiBook />
+        className={activeNav === '#experience' ? 'active' : ''}
+        aria-label="Go to blog section"
+        aria-current={activeNav === '#experience' ? 'page' : undefined}>
+        <BiBook aria-hidden="true" />
       </a>
       <a
         href="#portfolio"
         onClick={() => handleNavClick('#portfolio')}
-        className={activeNav === '#services' ? 'active' : ''}>
-        <RiServiceLine />
+        className={activeNav === '#services' ? 'active' : ''}
+        aria-label="Go to portfolio section"
+        aria-current={activeNav === '#services' ? 'page' : undefined}>
+        <RiServiceLine aria-hidden="true" />
       </a>
       <a
         href="#contact"
         onClick={() => handleNavClick('#contact')}
-        className={activeNav === '#contact' ? 'active' : ''}>
-        <BiMessageSquareDetail />
+        className={activeNav === '#contact' ? 'active' : ''}
+        aria-label="Go to contact section"
+        aria-current={activeNav === '#contact' ? 'page' : undefined}>
+        <BiMessageSquareDetail aria-hidden="true" />
       </a>
     </nav>
   )
