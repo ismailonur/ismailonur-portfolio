@@ -1,66 +1,78 @@
 export const policyContents = {
-    ethereum: {
-        title: 'Ethereum Gas Gwei Tracker',
-        content: {
-            en: 'The application does not collect or use any user data.',
-            tr: 'Ethereum Gas Gwei Tracker uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.'
-        }
-    },
-    biometric: {
-        title: 'Biometric Password Protection',
-        content: {
-            en: `A profile is opened for you with the e-mail address you registered in the system. We store this information in the database so that you can access this profile later.
-                The passwords you create are completely randomly generated inside the phone.
-                We encrypt the passwords you register with a key created on your device and only available on your device, and send them to our database.
-                Since your passwords are encrypted with the key on your device, even we cannot see your passwords. Your passwords are completely safe unless you get the key on your device.
-                By using the application, you accept them.`,
-            tr: `Sisteme kayıt olduğunuz e mail adresi ile size bir profil açılıyor. Daha sonra bu profile erişmek isteyebilmeniz için bu bilgileri databasede saklıyoruz.
-                Oluşturduğunuz şifreler tamamen rastgele bir şekilde telefon içinde oluşturuluyor.
-                Kayıt attiğiniz şifreler ise yine cihazınızda oluşturulan ve sadece cihazınızda bulunan bir anahtar ile şifreleyip databaseimize gönderiyoruz.
-                Şifrelerinizi cihazınızdaki key ile şifrelendiği için biz bile şifrelerinizi göremiyoruz. Cihazınızda bulunan keyi ele geçirmediğiniz takdirde şifreleriniz tamamen güvendedir.
-                Ugulamayı kullanırken bunları kabul etmiş olurusunuz.`
-        }
-    },
-    twas: {
-        title: 'TWAS',
-        content: {
-            en: 'The application does not collect or use any user data.',
-            tr: 'TWAS uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.'
-        }
-    },
-    stickers: {
-        title: 'Stickers for WhatsApp',
-        content: {
-            en: 'The application does not collect or use any user data.',
-            tr: 'Stickers for WhatsApp uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.'
-        }
-    },
-    animals_stickers: {
-        title: 'Happy Animals Sticker',
-        content: {
-            en: 'The application does not collect or use any user data.',
-            tr: 'Happy Animals Sticker uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.'
-        }
-    },
-    decimal_converter: {
-        title: 'Decimal Converter',
-        content: {
-            en: 'The application does not collect or use any user data.',
-            tr: 'Decimal Converter uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.'
-        }
-    },
-    motolorji_sticker: {
-        title: 'Motolorji Sticker Packs',
-        content: {
-            en: 'The application does not collect or use any user data.',
-            tr: 'Motolorji Sticker Packs uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.'
-        }
-    },
-    pdf_viewer: {
-        title: 'PDF Viewer',
-        content: {
-            en: 'The application does not collect or use any user data.',
-            tr: 'PDF Viewer uygulaması herhangi bir kullanıcı verisi toplamaz veya kullanmaz.'
-        }
-    }
-}; 
+  ethereum: {
+    title: 'Ethereum Gwei Tracker Privacy Policy',
+    content: `
+      <h2>Privacy Policy</h2>
+      <p>This privacy policy applies to the Ethereum Gwei Tracker app.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We do not collect any personal information from users of this application.</p>
+      <h3>Data Storage</h3>
+      <p>All data is stored locally on your device. We do not transmit any data to external servers.</p>
+    `
+  },
+  biometric: {
+    title: 'Biometric Password Protection Privacy Policy',
+    content: `
+      <h2>Privacy Policy</h2>
+      <p>This privacy policy applies to the Biometric Password Protection app.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We do not collect, store, or transmit any personal information. All biometric data remains on your device and is managed by your device's operating system.</p>
+      <h3>Security</h3>
+      <p>Your passwords and biometric data are stored securely on your device using industry-standard encryption.</p>
+    `
+  },
+  twas: {
+    title: 'Twas Privacy Policy',
+    content: `
+      <h2>Privacy Policy</h2>
+      <p>This privacy policy applies to the Twas app.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We do not collect any personal information from users of this application.</p>
+    `
+  },
+  stickers: {
+    title: 'Stickers for WhatsApp Privacy Policy',
+    content: `
+      <h2>Privacy Policy</h2>
+      <p>This privacy policy applies to the Stickers for WhatsApp app.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We do not collect any personal information. All sticker data is stored locally on your device.</p>
+    `
+  },
+  animals_stickers: {
+    title: 'Happy Animals Sticker Privacy Policy',
+    content: `
+      <h2>Privacy Policy</h2>
+      <p>This privacy policy applies to the Happy Animals Sticker app.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We do not collect any personal information. All sticker data is stored locally on your device.</p>
+    `
+  },
+  decimal_converter: {
+    title: 'Decimal Converter Privacy Policy',
+    content: `
+      <h2>Privacy Policy</h2>
+      <p>This privacy policy applies to the Decimal Converter app.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We do not collect any personal information from users of this application.</p>
+    `
+  },
+  motolorji_sticker: {
+    title: 'Motolorji Sticker Packs Privacy Policy',
+    content: `
+      <h2>Privacy Policy</h2>
+      <p>This privacy policy applies to the Motolorji Sticker Packs app.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We do not collect any personal information. All sticker data is stored locally on your device.</p>
+    `
+  },
+  pdf_viewer: {
+    title: 'PDF Viewer Privacy Policy',
+    content: `
+      <h2>Privacy Policy</h2>
+      <p>This privacy policy applies to the PDF Viewer app.</p>
+      <h3>Information Collection and Use</h3>
+      <p>We do not collect any personal information. All PDF files are stored and viewed locally on your device.</p>
+    `
+  }
+};
