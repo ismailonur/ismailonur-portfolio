@@ -47,11 +47,25 @@ Preview the production build locally.
 
 ## 🚀 Deployment
 
+### Docker Deployment (Dokploy)
+
 ```bash
-npm run deploy
+# Build the Docker image
+docker build -t ismailonur-portfolio .
+
+# Run the container
+docker run -p 80:80 ismailonur-portfolio
 ```
 
-Deploys the app to GitHub Pages.
+The app will be available at `http://localhost`
+
+### Manual Deployment
+
+```bash
+npm run build
+```
+
+Then upload the `build` folder to your server.
 
 ## 📝 Features
 
