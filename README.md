@@ -8,9 +8,6 @@ A modern, responsive portfolio website built with React and Vite.
 - **Vite** 7.1.12 - Lightning fast build tool ⚡
 - **React Router DOM** 6.30.1
 - **React Icons** 4.12.0
-- **Swiper** 8.4.7
-- **EmailJS** for contact form
-- **React GA** for analytics
 - **React Helmet** for SEO
 
 ## 📦 Installation
@@ -69,16 +66,10 @@ Then upload the `build` folder to your server.
 
 ## 📝 Features
 
-- ⚡ Lightning fast development with Vite
+- 🪪 Single-page contact card (name, title, profile links, ETH Gas Tracker)
 - 🌍 Multi-language support (TR/EN)
+- 🔒 Privacy policy pages for the published apps (linked from App Store / Google Play — keep these routes stable)
 - 📱 Responsive design
-- 🔍 SEO optimized
-- 📧 Contact form with EmailJS
-- 📊 Google Analytics integration
-- 📝 Blog section
-- 💼 Portfolio showcase
-- 🎯 Experience timeline
-- 🔒 Zero security vulnerabilities
 
 ## 🔄 Migration to Vite
 

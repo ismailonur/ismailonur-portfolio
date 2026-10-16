@@ -14,8 +14,6 @@ export default defineConfig({
         manualChunks: {
           // Vendor chunk for React and core libraries
           'vendor-react': ['react', 'react-dom', 'react-router-dom'],
-          // Separate chunk for Swiper if used
-          'vendor-swiper': ['swiper'],
           // Icons chunk if you're using react-icons or similar
           // 'vendor-icons': ['react-icons'],
         },
